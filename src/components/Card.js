@@ -1,18 +1,21 @@
 import React from 'react';
-import exerciseImg from '../images/imagen1.jpg';
-import segunda from '../images/imagen2.webp';
+import exerciseImg from '../images/exercise.png';
+import '../style/Card.css'
 
 class Card extends React.Component{
     render(){
         return (
-            <div>
-                <div>
-                    <img src={exerciseImg}/>
-                    <img src={segunda}/>
-                </div>
-                <div>
-                    <h1>Technique Guide definitive</h1>
-                    <p>Learn Amazing street workout and calisthenics</p>
+            <div className="card  mx-auto Fitness-Card">
+                <div className="card-body">
+                    <div className="row center">
+                        <div className="col-6">
+                            <img src={exerciseImg} className="float-right"/>
+                        </div>
+                        <div className="col-6 Fitness-Card-Info">
+                            <h1>Technique Guide definitive</h1>
+                            <p>Learn Amazing street workout and calisthenics</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         )
